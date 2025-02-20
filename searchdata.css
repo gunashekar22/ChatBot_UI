@@ -72,3 +72,41 @@ canvas {
   max-width: 100%;
 }
 
+
+/* Button styles */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 10px;
+}
+
+/* Edit button */
+#editButton {
+  background-color: #ff8c00; /* Bright orange */
+  color: #121212; /* Dark text */
+}
+
+#editButton:hover {
+  background-color: #ffa64d; /* Lighter orange on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 140, 0, 0.4);
+}
+
+/* Back button */
+#backButton {
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent white */
+  color: #f0f0f0; /* Light text */
+  border: 2px solid #ff8c00; /* Orange border */
+}
+
+#backButton:hover {
+  background-color: rgba(255, 140, 0, 0.1); /* Slightly orange background on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 140, 0, 0.4);
+}
+

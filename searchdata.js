@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
     // Extract search query from URL
     const params = new URLSearchParams(window.location.search);
@@ -17,3 +18,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
     
 });
+
+
+document.getElementById('backButton').addEventListener('click', function() {
+    // Redirect to index.html
+    window.location.href = 'index.html';
+  });
+
+
+
+document.getElementById('editButton').addEventListener('click', function() {
+    // Extract search query from URL
+    const params = new URLSearchParams(window.location.search);
+    const query = params.get("query");
+
+    // Redirect to index.html with the search query as a URL parameter
+    window.location.href = `index.html?query=${encodeURIComponent(query)}`;
+});
+
+

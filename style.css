@@ -1,3 +1,40 @@
+/* Profile Section Styles */
+.profile-section {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+  background: #34495e;
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  border: 2px solid #ecf0f1;
+}
+
+.profile-name {
+  font-size: 12px;
+  font-weight: bold;
+  color: #ecf0f1;
+  margin-top: 5px;
+}
+
+
+
+
+
 /* General Styles */
 body {
   font-family: 'Helvetica Neue', Arial, sans-serif;

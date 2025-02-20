@@ -1,6 +1,3 @@
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
   const searchBtn = document.getElementById("searchBtn");
   const userInput = document.getElementById("userInput");
@@ -8,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function handleSearch() {
       const query = userInput.value.trim();
       if (query) {
-        window.location.href = `searchdata.html?query=${encodeURIComponent(query)}`;
+          window.location.href = `searchdata.html?query=${encodeURIComponent(query)}`;
       } else {
           alert("Please enter a query!");
       }
@@ -23,5 +20,12 @@ document.addEventListener("DOMContentLoaded", function () {
           handleSearch();
       }
   });
-});
 
+  // Retrieve search query from URL and prefill input field
+  const params = new URLSearchParams(window.location.search);
+  const query = params.get("query");
+
+  if (query) {
+      userInput.value = query;
+  }
+});
